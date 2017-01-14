@@ -47,9 +47,6 @@ before_action :correct_user,   only: [:edit, :update]
       redirect_to users_url
     end
 
-
-
-
     private
 
     def user_params
