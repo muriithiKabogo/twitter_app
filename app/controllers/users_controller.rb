@@ -16,7 +16,7 @@ before_action :correct_user,   only: [:edit, :update]
 		@user=User.new
   	end
 
-  	def create
+  def create
     	@user = User.new(user_params)    
     	if @user.save
         @user.send_activation_email
@@ -25,7 +25,7 @@ before_action :correct_user,   only: [:edit, :update]
     	else
      		render 'new'
     	end
-    end
+  end
 
     def edit
       @user = User.find(params[:id])
@@ -47,7 +47,7 @@ before_action :correct_user,   only: [:edit, :update]
       redirect_to users_url
     end
 
-    def following
+  def following
     @title = "Following"
     @user  = User.find(params[:id])
     @users = @user.following.paginate(page: params[:page])
@@ -61,7 +61,7 @@ before_action :correct_user,   only: [:edit, :update]
     render 'show_follow'
   end
 
-    private
+ private
 
     def user_params
       params.require(:user).permit(:name, :email, :password,:password_confirmation)
