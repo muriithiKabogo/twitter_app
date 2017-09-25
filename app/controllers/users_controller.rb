@@ -14,7 +14,7 @@ before_action :correct_user,   only: [:edit, :update]
 	
 	def new
 		@user=User.new
-  	end
+  end
 
   def create
     	@user = User.new(user_params)    
