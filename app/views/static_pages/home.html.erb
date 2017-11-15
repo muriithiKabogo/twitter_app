@@ -46,8 +46,6 @@
 <script>
   rakam.logEvent("submit"); 
   rakam.logEvent("field"); 
-  rakam.logEvent("pageview", {url: window.location.pathname, time_on_page: rakam.getTimeOnPreviousPage(), returning_session: rakam.isReturningUser(), color_depth: window.screen.colorDepth, viewport: x + ' × ' + y, title: document.title});
-});
 rakam.startTimer(true);
 </script>
   </body>
