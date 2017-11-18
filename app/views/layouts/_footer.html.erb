@@ -25,6 +25,10 @@
 
     rakam.init("7um6m42ujnvjt7oeviqbbtmpkiobfkcvv0tih9et7m0lkbg1k5djb3vuk9dpv5tl", null, { 
         apiEndpoint:"nestmetric.herokuapp.com/", 
+        saveEvents: true,
+        batchEvents: true,
+        eventUploadThreshold: 30,
+        eventUploadPeriodMillis: 30000,
         includeUtm: true, 
         trackClicks: true, 
         trackForms: true, 
