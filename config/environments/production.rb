@@ -53,7 +53,8 @@ Rails.application.configure do
   # config.cache_store = :mem_cache_store
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'sleepy-sea-49875.herokuapp.com'
+  # host = 'sleepy-sea-49875.herokuapp.com' 
+  host = 'evening-lake-36633.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
