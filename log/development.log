@@ -23932,3 +23932,102 @@ Completed 200 OK in 115ms (Views: 112.2ms | ActiveRecord: 0.0ms)
   [1m[35m (22.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35m (1.8ms)[0m  [1m[36mbegin transaction[0m
   [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/" for 127.0.0.1 at 2017-11-24 12:51:34 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (21.2ms)
+  Rendered layouts/_rails-default.html.erb (2139.6ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (28.5ms)
+Completed 500 Internal Server Error in 2344ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    23:         for(var c=0;c<o.length;c++){s(i.prototype,o[c])}r.User=i;r._q=[];var u=["init","logEvent","logInlinedEvent","setUserId","getUserId","getDeviceId","setSuperProperties","setOptOut","setVersionName","setDomain","setUserProperties","setDeviceId","onload","onEvent","getTimeOnPreviousPage","getTimeOnPage","startTimer","isReturningUser"];
+    24:         for(var m=0;m<u.length;m++){s(r,u[m])}e.rakam=r})(window,document);
+    25: 
+    26:     rakam.init("tmple2fgt1ublveuo3o42v4hkq9ovlgfllr149osvk041li9jaicciia37osipvc", <%=@user.email%>, { 
+    27:         apiEndpoint:"nestmetricai.herokuapp.com", 
+    28:         saveEvents: true,
+    29:         batchEvents: true,
+  
+app/views/layouts/_footer.html.erb:26:in `_app_views_layouts__footer_html_erb___2240798770472880376_331023114480'
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb__2882227808372162296_70192818324640'
+  Rendering /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (26.2ms)
+  Rendering /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendering /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (83.3ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from status_code_with_paginate at /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/will_paginate-3.1.0/lib/will_paginate/railtie.rb:49)
+Started GET "/" for 127.0.0.1 at 2017-11-24 12:52:35 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_rails-default.html.erb (109.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (4.9ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    23:         for(var c=0;c<o.length;c++){s(i.prototype,o[c])}r.User=i;r._q=[];var u=["init","logEvent","logInlinedEvent","setUserId","getUserId","getDeviceId","setSuperProperties","setOptOut","setVersionName","setDomain","setUserProperties","setDeviceId","onload","onEvent","getTimeOnPreviousPage","getTimeOnPage","startTimer","isReturningUser"];
+    24:         for(var m=0;m<u.length;m++){s(r,u[m])}e.rakam=r})(window,document);
+    25: 
+    26:     rakam.init("tmple2fgt1ublveuo3o42v4hkq9ovlgfllr149osvk041li9jaicciia37osipvc", <%@user.email%>, { 
+    27:         apiEndpoint:"nestmetricai.herokuapp.com", 
+    28:         saveEvents: true,
+    29:         batchEvents: true,
+  
+app/views/layouts/_footer.html.erb:26:in `_app_views_layouts__footer_html_erb___2240798770472880376_70192349145380'
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb__2882227808372162296_70192684168000'
+  Rendering /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.1ms)
+  Rendering /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendering /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.7ms)
+DEPRECATION WARNING: #original_exception is deprecated. Use #cause instead. (called from status_code_with_paginate at /home/muriithi-kabogo/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/will_paginate-3.1.0/lib/will_paginate/railtie.rb:49)
+Started GET "/" for 127.0.0.1 at 2017-11-24 12:56:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_rails-default.html.erb (670.3ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 733ms (Views: 707.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-24 12:56:32 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1516.7ms)
+  Rendered layouts/_rails-default.html.erb (99.7ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 1650ms (Views: 1632.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-11-24 12:56:54 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_rails-default.html.erb (135.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 156ms (Views: 154.2ms | ActiveRecord: 0.0ms)
+
+
