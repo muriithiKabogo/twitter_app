@@ -6,7 +6,7 @@
     <%= form_for(:session, url: login_path) do |f| %>
 
       <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control'   %>
+      <%= f.email_field :email, class: 'form-control', rakam_event_attribute: "email"%>
 
       <%= f.label :password %>
       <%= link_to "(forgot password)", new_password_reset_path %>
@@ -18,3 +18,7 @@
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
   </div>
 </div>
+
+<script>
+  rakam.logInlinedEvent("logins");
+</script>
