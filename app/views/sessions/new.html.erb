@@ -3,7 +3,7 @@
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
-    <%= form_for(:session, url: login_path,:html => {:"rakam-event-form" => 'Login'}) do |f| %>
+    <%= form_for(:session, url: login_path,:html => {:"rakam-event-form" => 'Logins'}) do |f| %>
 
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control', "rakam-event-form" => 'Email'%>
@@ -18,7 +18,3 @@
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
   </div>
 </div>
-
-<script>
-  rakam.logInlinedEvent("logins");
-</script>
