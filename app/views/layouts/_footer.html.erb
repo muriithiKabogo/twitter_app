@@ -45,9 +45,8 @@
         rakam.setSuperProperties({platform: 'Web', _ip: true, _user_agent:true, _referrer:document.referrer, resolution: window.screen.width+" × "+window.screen.height}, true);
 
     </script>
-<%end%>
-
-    <script>
+<%else%>
+ <script>
 
         (function(e,t){var r=e.rakam||{};var n=t.createElement("script");n.type="text/javascript";
             n.async=true;n.src="https://d2f7xo8n6nlhxf.cloudfront.net/rakam.min.js";
@@ -67,7 +66,19 @@
             trackClicks: true, 
             trackForms: true, 
             includeReferrer: true 
+        }, function() {
+            var e = document.documentElement, g = document.getElementsByTagName('body')[0],
+                    x = window.innerWidth || e.clientWidth || g.clientWidth,
+                    y = window.innerHeight|| e.clientHeight|| g.clientHeight;
+
+            rakam.logEvent("pageview", {url: window.location.pathname, time_on_page: rakam.getTimeOnPreviousPage(), returning_session: rakam.isReturningUser(), color_depth: window.screen.colorDepth, viewport: x + ' × ' + y, title: document.title});
         });
+        rakam.startTimer(true);
+
+        rakam.setSuperProperties({platform: 'Web', _ip: true, _user_agent:true, _referrer:document.referrer, resolution: window.screen.width+" × "+window.screen.height}, true);
 
     </script>
+<%end%>
+
+    
 </footer>
